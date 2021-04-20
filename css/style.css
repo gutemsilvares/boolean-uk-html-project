@@ -1,0 +1,138 @@
+:root {
+	--primary-color: #35b8be;
+	--secondary-color: #9ea7b9;
+	--third-color: #24969c;
+	--light-color: #fff;
+	--dark-color: #080a0a;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--light-color);
+}
+
+html {
+	font-family: "Inter", sans-serif;
+	font-size: 10px;
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+}
+
+.paragraph {
+	color: var(--third-color);
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.text-primary-light {
+	font-size: 70px;
+	font-weight: 700;
+	color: var(--third-color);
+}
+
+.text-primary {
+	font-size: 70px;
+	font-weight: 700;
+	color: var(--dark-color);
+}
+
+.btn {
+	font-size: 18px;
+	font-weight: 300;
+	color: var(--light-color);
+	margin-top: 20px;
+	padding: 1.5rem 6rem;
+	background-image: linear-gradient(
+		to right top,
+		#35b8be,
+		#5bb5ba,
+		#74b2b6,
+		#88afb1,
+		#9aacad
+	);
+
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-image: linear-gradient(
+		to right top,
+		#53b7bd,
+		#71b7bb,
+		#87b1b4,
+		#8eaeaf,
+		#a1adad
+	);
+}
+
+.container {
+	width: 100%;
+	max-width: 110rem;
+	margin: 0 auto;
+	padding: 0 15px;
+	/* border: 1px solid #fff; */
+}
+
+.header {
+	padding: 10px;
+	background: rgb(97, 182, 187);
+	background: linear-gradient(
+		90deg,
+		rgb(107, 188, 192) 0%,
+		rgb(115, 135, 136) 100%
+	);
+
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+}
+
+.social {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: right;
+	grid-gap: 30px;
+}
+
+.nav {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+
+.nav .logo img {
+	width: 50px;
+}
+
+.nav-item {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 25px;
+}
+
+.nav-item a {
+	color: var(--third-color);
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.nav-item a:hover {
+	color: var(--primary-color);
+	transition: all 0.3s;
+	text-decoration: underline;
+}
