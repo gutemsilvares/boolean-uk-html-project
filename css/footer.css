@@ -46,13 +46,18 @@ form input {
 	outline-color: none;
 }
 
-::placeholder{
-	font-family: 'Inter', sans-serif;
-	font-size: 1.6rem;
-	color: var(--secondary-color);
+input[type="text"] {
+	font-size: 16px;
+	color: var(--third-color);
+	font-weight: 300;
 }
 
-
+::placeholder {
+	font-family: "Inter", sans-serif;
+	font-size: 1.6rem;
+	color: var(--secondary-color);
+	font-weight: 300;
+}
 
 .btn-radius {
 	border-radius: 50px;
@@ -63,3 +68,12 @@ form button {
 	border: none;
 }
 
+.create-account {
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.create-account a:hover {
+	text-decoration: underline;
+}
