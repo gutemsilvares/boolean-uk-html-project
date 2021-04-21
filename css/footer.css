@@ -43,13 +43,14 @@ form input {
 	padding: 15px;
 	border-radius: 50px;
 	border: 1px solid var(--primary-color);
-	outline-color: none;
 }
 
-input[type="text"] {
+input[type="text"]:focus,
+input[type="password"]:focus {
 	font-size: 16px;
 	color: var(--third-color);
 	font-weight: 300;
+	outline: none;
 }
 
 ::placeholder {
