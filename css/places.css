@@ -15,3 +15,9 @@
 	grid-gap: 40px;
 	align-items: center;
 }
+
+.works-grid {
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+	padding: 60px;
+	border-radius: 10px;
+}
