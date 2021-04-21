@@ -1,0 +1,18 @@
+:root {
+	--primary-color: #35b8be;
+	--secondary-color: #9ea7b9;
+	--third-color: #24969c;
+	--light-color: #fff;
+	--dark-color: #080a0a;
+}
+
+.partnership {
+	display: grid;
+	grid-auto-flow: row;
+	height: 40vh;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	align-items: center;
+	background: #f5fbfc;
+}
