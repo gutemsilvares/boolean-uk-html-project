@@ -6,13 +6,28 @@
 	--dark-color: #080a0a;
 }
 
-.partnership {
+.partners {
 	display: grid;
 	grid-auto-flow: row;
-	height: 40vh;
+	height: 30vh;
 	margin-top: 20px;
 	padding: 20px;
 	text-align: center;
 	align-items: center;
 	background: #f5fbfc;
+	clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
+}
+
+.partners-grid {
+	display: grid;
+	padding: 40px;
+	margin-top: 40px;
+}
+.partners-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
