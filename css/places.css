@@ -6,9 +6,8 @@
 	--dark-color: #080a0a;
 }
 
-.best-place {
-	margin: 40px 0;
-	padding: 15px;
+.places {
+	padding: 80px 0;
 }
 .place-content {
 	display: grid;
@@ -16,4 +15,3 @@
 	grid-gap: 40px;
 	align-items: center;
 }
-

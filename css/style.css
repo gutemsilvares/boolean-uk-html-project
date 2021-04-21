@@ -17,7 +17,8 @@ body {
 }
 
 html {
-	font-family: "Inter", sans-serif;
+	font-family: "Inter", "Rubik", sans-serif;
+	
 	font-size: 10px;
 	line-height: 1.4;
 }
@@ -118,7 +119,7 @@ ul {
 }
 
 .nav .logo img {
-	width: 50px;
+	width: 60px;
 }
 
 .nav-item {
