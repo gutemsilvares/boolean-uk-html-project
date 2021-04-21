@@ -97,6 +97,9 @@ ul {
 
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+	position: sticky;
+	top: 0;
+	left: 0;
 }
 
 .social {

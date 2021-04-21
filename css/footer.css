@@ -42,7 +42,7 @@ form {
 form input {
 	padding: 15px;
 	border-radius: 50px;
-	border: none;
+	border: 1px solid var(--primary-color);
 	outline-color: none;
 }
 
@@ -65,7 +65,7 @@ input[type="text"] {
 }
 
 form button {
-	border: none;
+	border: 1px solid var(--light-color);
 }
 
 .create-account {
