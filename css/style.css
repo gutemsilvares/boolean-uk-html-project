@@ -379,6 +379,10 @@ form button {
 /*======320px=====*/
 
 @media screen and (max-width: 20rem) {
+	.nav-item .item {
+		display: none;
+	}
+
 	.hero-content {
 		justify-content: center;
 		text-align: center;
