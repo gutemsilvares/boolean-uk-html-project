@@ -46,7 +46,7 @@
 	overflow: hidden;
 	max-height: 0;
 	position: relative;
-	transition: max-height 650ms;
+	transition: max-height 1200ms;
 }
 
 .answer::before {

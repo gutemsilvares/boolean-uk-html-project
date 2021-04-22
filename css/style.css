@@ -177,14 +177,21 @@ ul {
 
 #about {
 	background: url("/img/shape2.svg") no-repeat center;
-	padding: 80px 0;
+	padding: 80px 10px;
 	justify-content: center;
 	/* text-align: center; */
 }
 
 .choice {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.choice-content {
+	text-align: left;
 	align-items: center;
 }
 
@@ -220,15 +227,28 @@ ul {
 }
 .place-content {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 40px;
+	justify-content: center;
 	align-items: center;
+	padding: 15px;
 }
 
 .works-grid {
 	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 	padding: 60px;
 	border-radius: 10px;
+	cursor: pointer;
+}
+
+.works-grid:hover {
+	background: #f5fbfc;
+	transition: all 0.4s ease;
+}
+
+.place-content-right {
+	display: grid;
+	grid-auto-flow: row;
 }
 
 /*========FOOTER==========*/
@@ -244,7 +264,7 @@ ul {
 
 .footer-content {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	align-items: center;
 	text-align: center;
 	padding: 80px 0;
@@ -304,4 +324,103 @@ form button {
 
 .create-account a:hover {
 	text-decoration: underline;
+}
+
+/*======1024px=====*/
+
+@media screen and (max-width: 64rem) {
+	.place-content-right iframe {
+		width: 100%;
+		height: 350px;
+	}
+
+	form {
+		width: 90%;
+	}
+}
+
+/*======768px=====*/
+
+@media screen and (max-width: 48rem) {
+	.text-primary {
+		font-size: 40px;
+	}
+
+	.text-primary-light {
+		font-size: 4rem;
+	}
+
+	.choice-img {
+		width: 90%;
+	}
+
+	.works-grid .txt-works,
+	.works-grid p {
+		display: none;
+	}
+
+	.footer .logo {
+		background: url("../img/shape3.svg") no-repeat left;
+		background-size: 150px;
+	}
+}
+
+/*======375px / 414px=====*/
+@media screen and (min-width: 375px) and (max-width: 25.875rem) {
+	.nav-item .item {
+		display: none;
+	}
+
+	.hero-content {
+		margin: 40px 0 80px 0;
+	}
+}
+
+/*======320px=====*/
+
+@media screen and (max-width: 20rem) {
+	.hero-content {
+		justify-content: center;
+		text-align: center;
+		grid-gap: 10px;
+		align-items: center;
+		padding: 5px;
+	}
+
+	.text-primary {
+		font-size: 3.5rem;
+	}
+
+	.paragraph {
+		font-size: 1.6rem;
+	}
+
+	.text-primary-light {
+		font-size: 3rem;
+	}
+
+	#about {
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.choice {
+		justify-content: center;
+		text-align: center;
+		padding: 5px;
+	}
+
+	.choice-img {
+		text-align: center;
+	}
+
+	.choice-content {
+		text-align: center;
+		align-items: center;
+	}
+
+	.footer .logo {
+		background: url("../img/shape3.svg") no-repeat left;
+		background-size: 10rem;
+	}
 }

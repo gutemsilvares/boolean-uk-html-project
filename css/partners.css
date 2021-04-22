@@ -8,7 +8,6 @@
 
 .partners {
 	display: grid;
-	grid-auto-flow: row;
 	height: 30vh;
 	margin-top: 20px;
 	padding: 20px;
@@ -19,15 +18,38 @@
 }
 
 .partners-grid {
-	display: grid;
 	padding: 40px;
 	margin-top: 40px;
 }
 .partners-content {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 60px;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	padding: 15px;
+}
+.partners-content img:last-child {
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+	.partners-content {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 415px) {
+	.partners-content img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 20rem) {
+	.partners-content img {
+		width: 100%;
+	}
 }
